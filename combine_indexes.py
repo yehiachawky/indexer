@@ -57,5 +57,5 @@ for index_file in sorted(files_to_parse):
                 master_index[term] = {'context':[context], 'related_terms': related_terms}
 
 print("writing master index file")
-with open("master_index.json", "w") as f:
+with open("NYT_master_index.json", "w") as f:
     f.write(json.dumps(master_index, indent=2, sort_keys=True))

@@ -1,3 +1,1 @@
-#!/bin/bash
-
-pandoc -c basic.css -f docx "$1" -so "$2"
+pandoc -c basic.css -f docx "/Users/yehiamokhtar/Downloads/Software/projects/indexer/mobasher/Manuscript.docx" -so "manuscript.md"

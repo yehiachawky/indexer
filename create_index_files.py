@@ -9,14 +9,16 @@ __CONTENT_DIR = 'content'
 __OUTPUT_DIR = 'output'
 __CONTENT_PROMPT_LENGTH=200
 
-prompt = """Using the following criteria for selection, provide a JSON-formatted structured index of the following chunk of text, ignoring Markdown syntax like bullet points and links but considering headers for context. Limit the length of the index to 25 terms:
-a. Relevance to leadership of software development organizations
+prompt = """Using the following criteria for selection, provide a JSON-formatted structured index of the following chunk of text, ignoring Markdown syntax like bullet points and links but considering headers for context. Limit the length of the index to 50 terms:
+a. Relevance to the topic of Iranian migration to the US, the Iranian diaspora, or Iranian politics
 b. Word is used frequently
 c. Term is specific and precise
 d. Suggest related terms for cross-referencing
 e. Accommodate professional-level reader comprehension
 f. Consistent, organized and comprehensive results
-g. Proper Names
+g. Proper Names of people and countries
+h. Relevance to the discipline of anthropology and sociology, including famous academics in this field
+i. Famous politicians, political figures, or public figures
 
 the format of the JSON should be of the form
 {
